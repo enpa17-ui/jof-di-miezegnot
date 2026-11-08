@@ -13,6 +13,11 @@
         
         <!-- Titolo e descrizione -->
         <h1>Il Percorso</h1>
+
+        <div style="margin-bottom: 25px;">
+            <button id="btn-notte" class="btn-ritorno">⛺ Attiva Atmosfera Notturna</button>
+        </div>
+        
         <p class="descrizione-testo">
             Una panoramica dell'itinerario: dati tecnici, punti di riferimento e la mappa per orientarsi lungo il nostro percorso sullo Jôf di Miezegnot.
         </p>
@@ -51,6 +56,20 @@
         </div>
 
     </div>
+    <!-- SCRIPT JAVASCRIPT PER LA MODALITÀ NOTTE -->
+    <script>
+        const btnNotte = document.getElementById('btn-notte');
+        
+        btnNotte.addEventListener('click', function() {
+            document.body.classList.toggle('modo-notte');
+            
+            if (document.body.classList.contains('modo-notte')) {
+                btnNotte.textContent = "☀️ Torna alla luce del giorno";
+            } else {
+                btnNotte.textContent = "⛺ Attiva Atmosfera Notturna";
+            }
+        });
+    </script>
 
 </body>
 </html>
