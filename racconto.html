@@ -12,6 +12,11 @@
     <div class="sezione-galleria box-percorso-principale">
         
         <h1>Il Racconto dell'Avventura</h1>
+
+        <div style="margin-bottom: 25px;">
+            <button id="btn-notte" class="btn-ritorno">⛺ Attiva Atmosfera Notturna</button>
+        </div>
+        
         <p class="descrizione-testo parag-centrati">
             Il diario di bordo della nostra escursione sullo Jôf di Miezegnot: tra risate, pioggia improvvisa, tende nel bosco e panorami indimenticabili.
         </p>
@@ -87,6 +92,21 @@
         </div>
 
     </div>
+
+    <!-- SCRIPT JAVASCRIPT PER LA MODALITÀ NOTTE -->
+    <script>
+        const btnNotte = document.getElementById('btn-notte');
+        
+        btnNotte.addEventListener('click', function() {
+            document.body.classList.toggle('modo-notte');
+            
+            if (document.body.classList.contains('modo-notte')) {
+                btnNotte.textContent = "☀️ Torna alla luce del giorno";
+            } else {
+                btnNotte.textContent = "⛺ Attiva Atmosfera Notturna";
+            }
+        });
+    </script>
 
 </body>
 </html>
