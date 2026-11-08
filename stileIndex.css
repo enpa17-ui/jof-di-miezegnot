@@ -161,3 +161,36 @@ h1 {
 .btn-cookie:hover {
   background: #c8e6c9;
 }
+
+/* --- MODALITÀ NOTTE (Dark Mode Completa) --- */
+body.modo-notte {
+  background: linear-gradient(rgba(10, 15, 22, 0.8), rgba(10, 15, 22, 0.9)), 
+              url('https://images.pexels.com/photos/790181/pexels-photo-790181.jpeg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  color: #d1d5db !important;
+}
+
+body.modo-notte .box-percorso-principale {
+  background: rgba(20, 26, 33, 0.9) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5) !important;
+  color: #d1d5db !important;
+}
+
+body.modo-notte .box-percorso-principale h1, 
+body.modo-notte .box-percorso-principale h2, 
+body.modo-notte .box-percorso-principale h3, 
+body.modo-notte .box-percorso-principale p,
+body.modo-notte .capitolo-box p {
+  color: #d1d5db !important;
+}
+
+body.modo-notte .capitolo-box {
+  border-top-color: rgba(255, 255, 255, 0.15);
+}
+
+body.modo-notte .didascalia {
+  color: #94a3b8;
+}
