@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Escursione: Jôf di Miezegnot</title>
+        <link rel="stylesheet" href="stileIndex.css">
+    </head>
+
+    <body>
+   <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(30, 58, 76, 0.95); backdrop-filter: blur(10px); color: white; text-align: center; padding: 15px; box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2); z-index: 1000; font-size: 0.9rem;">
+    <p>🥾 Questo sito utilizza solo cookie tecnici per offrirti la migliore esperienza di escursione! 
+        <button onclick="document.getElementById('cookie-banner').style.display='none';" style="background: #ffffff; color: #1e3a4c; border: none; padding: 6px 15px; margin-left: 15px; border-radius: 6px; font-weight: bold; cursor: pointer;">
+            Ho capito
+        </button>
+    </p>
+</div>
+        <section class="box-contenuto">    
+
+            <h1>Escursione: Jôf di Miezegnot</h1> <!-- Titolo --> 
+
+            <!-- Creo la classe parag-centrati per gestirli separatamente-->
+            <p class="parag-centrati">Il ricordo di un'avventura resa sito</p> 
+
+        </section>
+
+        <section class="sezione-galleria">
+            <!-- Contenitore principale della galleria -->
+                <div class="galleria-container">
+                    <!-- Pulsante Indietro -->
+                    <button id="btn-precedente" class="btn-freccia">&#10094;</button>
+  
+                    <!-- L'immagine che ruota -->
+                    <img id="foto-galleria" src="immagini/montagna1.jpg" alt="Foto escursione" class="foto-galleria">
+  
+                    <!-- Pulsante Avanti -->
+                    <button id="btn-successivo" class="btn-freccia">&#10095;</button>
+                </div>
+                <!-- Descrizioni -->
+                <div class="testo-descrizione">
+                    <p class="testo-descrizione attiva">Ammirando il paesaggio.</p>
+                    <p class="testo-descrizione">La Croce sulla cima del monte.</p>
+                    <p class="testo-descrizione">Un piccolo momento di goliardia.</p>
+                    <p class="testo-descrizione">Le prime luci della mattina.</p>
+                    <p class="testo-descrizione">Vista su un rifigio.</p>
+                </div>
+           
+        </section>
+
+
+        <div class="menu-riquadri">
+            <!-- Riquadri di passaggio, uso la classe per definirne proprietà in CSS-->
+            <a href="percorso.html" class="riquadro-link">Il Percorso</a>
+            <a href="racconto.html" class="riquadro-link">Il Racconto</a>
+        </div>
+    
+        <!-- Script per la galleria a rotazione -->
+        <script src="galleria.js"></script>
+    
+    </body>
+
+
+</html>

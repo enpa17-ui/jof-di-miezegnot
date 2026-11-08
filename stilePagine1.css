@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Proprietà corpo principale*/
+body {
+  font-family: 'Poppins', sans-serif;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), 
+    url('immagini/sfondo1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #2c3e50;
+}
+
+p {
+  font-size: 1rem; 
+  line-height: 1.7;
+  color: #2c3e50;
+}
+
+/* Griglia per i dati */
+.dati-grid {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.badge-dato {
+  background: rgba(30, 58, 76, 0.1);
+  color: #1e3a4c;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid rgba(30, 58, 76, 0.2);
+}
+
+.box-percorso-principale {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 40px;
+  text-align: left !important; 
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+
+.descrizione-testo {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.dati-grid-sinistra {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.mappa-legenda-align {
+  display: flex;
+  align-items: center; 
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.foto-galleria-mappa {
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);  
+}
+
+
+.legenda-lato {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  flex: 1;
+  min-width: 220px;
+}
+
+.legenda-lato h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #1e3a4c;
+}
+
+.legenda-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.95rem;
+  color: #2c3e50;
+  line-height: 1.8;
+}
+.btn-ritorno {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.6);
+  color: #1e3a4c;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.btn-ritorno:hover {
+  background: #1e3a4c;
+  color: white;
+  border-color: #1e3a4c;
+  transform: translateY(-2px);
+}
+
+.capitolo-box {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(30, 58, 76, 0.15); 
+  text-align: left;
+}
+
+.capitolo-box h2 {
+  color: #1e3a4c;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.capitolo-box p {
+  margin-bottom: 15px;
+  line-height: 1.7;
+  color: #2c3e50;
+}
+
+
+.foto-capitolo-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.foto-capitolo {
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+.didascalia {
+  display: block;
+  font-size: 0.85rem;
+  color: #556875;
+  font-style: italic;
+  margin-top: 8px;
+}
